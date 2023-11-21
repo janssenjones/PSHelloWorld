@@ -30,7 +30,8 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-vscode.powershell",
-				"ms-vscode.PowerShell"
+				"ms-vscode.PowerShell",
+				"GitHub.copilot"
 			]
 		}
 	}
