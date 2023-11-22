@@ -11,6 +11,7 @@ jobs:
       - name: Perform a Pester test from the command-line
         shell: pwsh
         run: Test-Path JJHelloWorld | Should -Be $true
-      - name: Test That Get-HelloWorld.ps1 returns 'Hello World!'
+      - name: Perform a Pester test from the Tests.ps1 file
         shell: pwsh
-        run: JJHelloWorld/Get-HelloWorld.ps1 | Should -Be 'Hello World!'
+        run: |
+          Invoke-Pester tests/JJHelloWorld.Tests.ps1 -Passthru
