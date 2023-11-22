@@ -5,3 +5,13 @@ function Foo {
 }
 
 $MyVar = !$true
+
+function Test
+{
+    [CmdletBinding]
+    Param
+    (
+        $ErrorVariable,
+        $Parameter2
+    )
+}
